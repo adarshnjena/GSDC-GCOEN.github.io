@@ -358,7 +358,7 @@ img {
 .container .cards {
   margin-top: 5%;
   position: relative;
-  width: 20rem;
+  max-width: 20rem;
   height: 25rem;
   background-color: #0E2431;
 }
