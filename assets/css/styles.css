@@ -355,10 +355,9 @@ img {
 }
 .container .cards {
   margin-top: 5%;
-  position: relative;
-  max-width: 100%;
   height: 25rem;
   background-color: #0E2431;
+  max-width: 100vw;
 }
 /* ===== CONTACT =====*/
 .contact__input {
