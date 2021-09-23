@@ -520,6 +520,7 @@ footer a{
     position: relative;
     margin: auto;
     overflow-x: visible;
+    height: 100vh;
   }
 
   .circle {
