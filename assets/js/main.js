@@ -25,32 +25,6 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 1300,
-    reset: true
-});
-
-/*SCROLL HOME*/
-sr.reveal('.home__title', { delay: 100 });
-sr.reveal('.button', { delay: 200 });
-sr.reveal('.home__txt', { delay: 200 });
-sr.reveal('.home__social-icon', { interval: 200 });
-sr.reveal('.circle', { delay: 100 })
-sr.reveal('.circle2', { delay: 100 })
-
-/*SCROLL ABOUT*/
-sr.reveal('.container', { delay: 100 });
-sr.reveal('.container-title', { delay: 100 });
-sr.reveal('.container-title2', { delay: 100 });
-
-/*SCROLL WORK*/
-sr.reveal('.work__img', { interval: 100 });
-
-/*SCROLL CONTACT*/
-sr.reveal('.contact__input', { interval: 100 });
 
 
 

@@ -2,192 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 
-/*===== preloader =====*/
 
-.colour{
-    margin-top: 364px;
-    margin-left: 569.01px;
-}
-
-.blue{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #4285F4;
-    display: inline-block;
-    margin: 0.3cm;
-    animation: blue1 4s ease-in-out infinite;
-    animation-delay: 0s;
-}
-
-@keyframes blue1{
-    0%,50%{
-        transform: scale(1);
-        background-color: #4285F4;
-    }
-    25%{
-        transform: scale(0.2);
-        background-color: #4285F4;
-    }
-    50%{
-        transform: translateY(2.5cm);
-    }
-}
-
-.red{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #DB4437;
-    display: inline-block;
-    margin: 0.3cm;
-    animation: red1 4s ease-in-out infinite;
-    animation-delay: 0.3s;
-}
-
-@keyframes red1{
-    0%,50%{
-        transform: scale(1);
-        background-color: #DB4437;
-    }
-    25%{
-        transform: scale(0.2);
-        background-color: #DB4437;
-    }
-    50%{
-        transform: translateY(2.5cm);
-    }
-}
-
-.yellow{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #F4B400;
-    display: inline-block;
-    margin: 0.3cm;
-    animation: yellow1 4s ease-in-out infinite;
-    animation-delay: 0.6s;
-}
-
-@keyframes yellow1{
-    0%,50%{
-        transform: scale(1);
-        background-color: #F4B400;
-    }
-    25%{
-        transform: scale(0.2);
-        background-color: #F4B400;
-    }
-    50%{
-        transform: translateY(2.5cm);
-    }
-}
-
-.green{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #0F9D58;
-    display: inline-block;
-    margin: 0.3cm;
-    animation: green1 4s ease-in-out infinite;
-    animation-delay: 0.9s;
-}
-
-@keyframes green1{
-    0%,50%{
-        transform: scale(1);
-        background-color: #0F9D58;
-    }
-    25%{
-        transform: scale(0.2);
-        background-color: #0F9D58;
-    }
-    50%{
-        transform: translateY(2.5cm);
-    }
-}
-
-@media (max-width:1281px){
-    .colour{
-        margin-left: 526.51px;
-    }
-    .green{
-        height: 40px;
-        width: 40px;
-        margin: 0.3cm;
-    }
-    .yellow{
-        height:40px;
-        width: 40px;
-        margin: 0.3cm;
-    }
-    .red{
-        height: 40px;
-        width: 40px;
-        margin: 0.3cm;
-    }
-    .blue{
-        height:40px;
-        width:40px;
-        margin: 0.3cm;
-    }
-}
-
-@media (max-width: 768px){
-    .colour{
-        margin-left: 321.35px;
-    }
-    .green{
-        height: 20px;
-        width: 20px;
-        margin: 0.2cm;
-    }
-    .yellow{
-        height: 20px;
-        width: 20px;
-        margin: 0.2cm;
-    }
-    .red{
-        height: 20px;
-        width: 20px;
-        margin: 0.2cm;
-    }
-    .blue{
-        height:20px;
-        width:20px;
-        margin: 0.2cm;
-    }
-}
-
-@media (max-width: 414px){
-    .colour{
-        margin-left: 165.69px ;
-    }
-    .green{
-        height: 15px;
-        width: 15px;
-        margin: 0.1cm;
-    }
-    .yellow{
-        height:15px;
-        width: 15px;
-        margin: 0.1cm;
-    }
-    .red{
-        height: 15px;
-        width: 15px;
-        margin: 0.1cm;
-    }
-    .blue{
-        height:15px;
-        width:15px;
-        margin: 0.1cm;
-    }
-}
-
-/*===== preloader =====*/
 
 
 
@@ -250,6 +65,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
@@ -257,6 +73,8 @@ body {
   color: var(--second-color);
   overflow-x: hidden;
 }
+
+
 
 h1,
 h2,
@@ -280,6 +98,8 @@ img {
   display: block;
 }
 /*===== CLASS CSS ===== */
+
+
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -317,6 +137,121 @@ img {
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
+
+/*===== preloader =====*/
+
+
+.colour{
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+}
+
+.blue{
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    background-color: #4285F4;
+    display: inline-block;
+    margin: 0.3cm;
+    animation: blue1 3s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+@keyframes blue1{
+    0%,50%{
+        transform: scale(1);
+        background-color: #4285F4;
+    }
+    25%{
+        transform: scale(0.2);
+        background-color: #4285F4;
+    }
+    50%{
+        transform: translateY(2.5cm);
+    }
+}
+
+.red{
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    background-color: #DB4437;
+    display: inline-block;
+    margin: 0.3cm;
+    animation: red1 3s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+@keyframes red1{
+    0%,50%{
+        transform: scale(1);
+        background-color: #DB4437;
+    }
+    25%{
+        transform: scale(0.2);
+        background-color: #DB4437;
+    }
+    50%{
+        transform: translateY(2.5cm);
+    }
+}
+
+.yellow{
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    background-color: #F4B400;
+    display: inline-block;
+    margin: 0.3cm;
+    animation: yellow1 3s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+@keyframes yellow1{
+    0%,50%{
+        transform: scale(1);
+        background-color: #F4B400;
+    }
+    25%{
+        transform: scale(0.2);
+        background-color: #F4B400;
+    }
+    50%{
+        transform: translateY(2.5cm);
+    }
+}
+
+.green{
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    background-color: #0F9D58;
+    display: inline-block;
+    margin: 0.3cm;
+    animation: green1 3s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+@keyframes green1{
+    0%,50%{
+        transform: scale(1);
+        background-color: #0F9D58;
+    }
+    25%{
+        transform: scale(0.2);
+        background-color: #0F9D58;
+    }
+    50%{
+        transform: translateY(2.5cm);
+    }
+}
+
+
+
+/*===== preloader =====*/
 
 /*===== NAV =====*/
 
