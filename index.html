@@ -21,43 +21,54 @@
         <!--=====PreLoader====-->
 
 
+        <div class="colour">
+            <div class="blue"></div>
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+        </div>
+
+        <!--=====PreLoader end====-->
+
         <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">GSDC-GCOEN</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link
-                                active"><i
-                                    class='bx bx-home bx-flashing'></i>Home</a></li>
-                        <li class="nav__item"><a href="#rewards"
-                                class="nav__link"><i
-                                    class='bx bxs-user-detail bx-flashing'></i>
-                                Rewards</a></li>
-                        <li class="nav__item"><a href="#skills"
-                                class="nav__link"><i
-                                    class='bx bxs-terminal bx-flashing'></i>
-                                XYZ</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link"><i
-                                    class='bx bxs-user-badge bx-flashing'></i>
-                                XYZ</a></li>
-                        <li class="nav__item"><a href="#contact"
-                                class="nav__link"><i
-                                    class='bx bxs-conversation bx-flashing'></i>
-                                Contact</a></li>
-                    </u>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
         <main class="l-main">
+            <header class="l-header">
+                <nav class="nav bd-grid">
+                    <div>
+                        <a href="#" class="nav__logo">GSDC-GCOEN</a>
+                    </div>
+
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#home"
+                                    class="nav__link
+                                    active"><i
+                                        class='bx bx-home bx-flashing'></i>Home</a></li>
+                            <li class="nav__item"><a href="#rewards"
+                                    class="nav__link"><i
+                                        class='bx bxs-user-detail bx-flashing'></i>
+                                    Rewards</a></li>
+                            <li class="nav__item"><a href="#skills"
+                                    class="nav__link"><i
+                                        class='bx bxs-terminal bx-flashing'></i>
+                                    XYZ</a></li>
+                            <li class="nav__item"><a href="#work"
+                                    class="nav__link"><i
+                                        class='bx bxs-user-badge bx-flashing'></i>
+                                    XYZ</a></li>
+                            <li class="nav__item"><a href="#contact"
+                                    class="nav__link"><i
+                                        class='bx bxs-conversation bx-flashing'></i>
+                                    Contact</a></li>
+                        </u>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </nav>
+            </header>
+
             <!--===== HOME =====-->
             <div class="circle"></div>
             <section class="home bd-grid" id="home">
@@ -126,8 +137,6 @@
                     </form>
                 </div>
             </section>
-        </main>
-
         <!-- ===== FOOTER START ===== -->
         <footer class="footer">
             <div class="footer_sections">
@@ -171,16 +180,20 @@
             <p>Thank You</p>
         </footer>
         <!-- ===FOOTER ENDS -->
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
         <!--Page Loader-->
         <script>
-        var Loader = document.querySelector('.loader');
-        var page = document.querySelector('.l-main');
-
+            var Loader = document.querySelector('.colour');
+            var page = document.querySelector('.l-main');
+            document.body.style['overflow-y'] = 'hidden';
+        
+            page.style.opacity = "0";
+            setInterval(() => {
+                Loader.style.display = "none";
+                page.style.opacity = "1";
+                document.body.style['overflow-y'] = 'visible';
+            }, 2500);   
     </script>
     </body>
 
