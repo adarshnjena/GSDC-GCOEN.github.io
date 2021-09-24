@@ -443,34 +443,93 @@ img {
 }
 
 /*BUTTONS*/
-.button {
-  display: inline-block;
-  background-color: var(--first-color);
-  color: #fff;
-  padding: .75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: .5rem;
-  position: relative;
+.container
+{
+    position: left;
+    display:flex;
+    flex-direction: column;
+    align-items: left;
 }
+.container a
+{
+    position: relative;
+    width: 150px;
+    height:55px;
+    text-align:center;
+    line-height: 55px;
+    margin-top:10px;
+    text-transform: uppercase;
+    background: var(--first-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration:none ;
+    letter-spacing: 2px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.container a span
+{
+position: left;
+display : block;
+width:100%;
+height:100%;
+z-index:100000;
+transition: 0s ease-in;
+}
+.container a:hover span
+{
+    transition: 0.3s ease-in;
+    transform: translateY(-100%);
+}
+.container a:before
+{
+    content:'';
+    position: absolute;
+    bottom:-250px;
+    left: 50%;
+    transform:translateX(-50%);
+    width:250px;
+    height:250px;
+    background:var(--circle2);
+    border-radius:50%;
+    transition:0.3s ease-in;
+}
+.container a:hover:before
+{
+    bottom :-150px;
+}
+.container a:nth-child(2):before
+{
+    bottom:60px;
 
-.button:hover {
-  box-shadow: 0 10px 36px rgba(0, 0, 0, .35);
+}
+.container a:nth-child(2):hover:before
+{
+    bottom:-40px;
+
 }
 
 /* table */
 
-.container{
-  
-  width: 80%;
+.containers{
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
   margin: auto;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.box:hover{
+.box{
+  font-weight: normal;
+  background-color: var(--circle2);
   color:white;
   margin: 5px;
-  border: 1px solid rgb(18, 18, 224);
-  background-color: #007bff;;
   padding: 8px;
+  max-width: 80vw;
+  border-radius: 20px;
 }
 
 .btn{
@@ -480,13 +539,21 @@ img {
    color: white;
 }
 
+.join a{
+  color:white;
+}
+.join a:hover{
+  color:var(--second-color);
+}
+
 .join{
   padding:5px;
-  color:black;
-  background-color:#20c997;
+  color:white;
+  border-radius: 20px;
+  background-color:var(--second-color);
 }
 .join:hover{
-  color:white;
+   color:white;
    border: 1px solid black;
    background-color:white;
 }
@@ -511,13 +578,8 @@ img {
   margin-top: 10px;
   text-align: center;
 }
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.container .cards {
+
+.containers .cards {
   margin-top: 5%;
   height: 25rem;
   max-width: 100vw;
