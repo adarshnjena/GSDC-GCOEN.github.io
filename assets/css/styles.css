@@ -425,10 +425,6 @@ img {
   margin-left: 20px;
 }
 
-.home__btn {
-  margin-top: 30px;
-}
-
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
