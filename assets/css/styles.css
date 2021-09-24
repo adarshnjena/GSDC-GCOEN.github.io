@@ -598,6 +598,10 @@ transition: 0s ease-in;
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+  padding:12px 30px;
+  background-color: var(--first-color);
+  border-radius: 10px;
+  color: white;
 }
 
 
