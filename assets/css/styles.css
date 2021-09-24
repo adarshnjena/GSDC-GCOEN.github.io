@@ -370,28 +370,29 @@ img {
   height: 100vh;
 }
 
- .circle {
-   width: 500px;
-   height: 500px;
-   background: var(--circle);
-   position: absolute;
-   border-radius: 50%;
-   top: 50%;
-   left: -75%;
-   z-index: -1;
- }
+/*circle*/
+.circle {
+  width: 500px;
+  height: 500px;
+  background: var(--circle);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: -75%;
+  z-index: -1;
+}
 
-   .circle2 {
-     width: 500px;
-     height: 500px;
-     background: var(--circle2);
-     position: absolute;
-     bottom: 20%;
-     right: -75%;
-     /* border-radius: 50%; */
-     transform: rotate(45deg);
-     z-index: -1;
-   }
+  .circle2 {
+    width: 500px;
+    height: 500px;
+    background: var(--circle2);
+    position: absolute;
+    bottom: 20%;
+    right: -75%;
+    /* border-radius: 50%; */
+    transform: rotate(45deg);
+    z-index: -1;
+  }
 
 
 .home__data {
@@ -548,24 +549,14 @@ footer a{
   .circle {
     width: 400px;
     height: 400px;
-    background: var(--circle);
-    position: absolute;
-    top: 50%;
     left: -70%;
-    border-radius: 50%;
-    z-index: -1;
   }
 
   .circle2 {
     width: 400px;
     height: 400px;
-    background: var(--circle2);
-    position: absolute;
     bottom: 50%;
     right: -70%;
-    /* border-radius: 50%; */
-    transform: rotate(45deg);
-    z-index: -1;
   }
   }
 
@@ -575,27 +566,15 @@ footer a{
   .circle {
     width: 500px;
     height: 500px;
-    background: var(--circle);
-    position: absolute;
     top: 50%;
     left: -40%;
-    border-radius: 50%;
-    z-index: -1;
   }
 
   .circle2 {
     width: 500px;
     height: 500px;
-    background: var(--circle2);
-    position: absolute;
     bottom: 20%;
     right: -50%;
-    /* border-radius: 50%; */
-    transform: rotate(45deg);
-    z-index: -1;
-  }
-  .work__img p {
-    font-size: 3.5vw;
   }
   }
 
@@ -651,24 +630,15 @@ footer a{
   .circle {
     width: 500px;
     height: 500px;
-    background: var(--circle);
-    position: absolute;
     top: 40%;
     left:-15%;
-    border-radius: 50%;
-    z-index: -1;
   }
 
   .circle2 {
     width: 500px;
     height: 500px;
-    background: var(--circle2);
-    position: absolute;
     bottom: 30%;
     right: -40%;
-    /* border-radius: 50%; */
-    transform: rotate(45deg);
-    z-index: -1;
   }
 
   .home__title{
@@ -695,24 +665,6 @@ footer a{
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
-
-  .about__container{
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    text-align: initial;
-  }
-
-  .about__img img {
-    width: 300px;
-  }
-  .about__text {
-    padding: 0;
-    padding-right: 2vw;
-  }
-  .about__button{
-    padding: 10px;
-  }
-
   .contact__form {
     width: 360px;
   }
@@ -735,13 +687,6 @@ footer a{
 
   .home__img {
     right: 10%;
-  }
-  
-
-  .about__text {
-    font-size: 24px;
-    text-align: justify;
-    padding-left:0.5vw;
   }
 
 }
