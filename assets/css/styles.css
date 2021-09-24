@@ -456,6 +456,40 @@ img {
 .button:hover {
   box-shadow: 0 10px 36px rgba(0, 0, 0, .35);
 }
+
+/* table */
+
+.container{
+  
+  width: 80%;
+  margin: auto;
+
+}
+.box:hover{
+  color:white;
+  margin: 5px;
+  border: 1px solid rgb(18, 18, 224);
+  background-color: #007bff;;
+  padding: 8px;
+}
+
+.btn{
+  color: black;
+}
+.btn:hover{
+   color: white;
+}
+
+.join{
+  color:black;
+  background-color:#20c997;
+}
+.join:hover{
+  color:white;
+   border: 1px solid black;
+   background-color:black;
+}
+
 /* == Rewards == */
 .container-title{
   color: var(--first-color);
