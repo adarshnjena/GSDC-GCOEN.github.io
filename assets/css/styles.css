@@ -618,17 +618,7 @@ transition: 0s ease-in;
 }
 
 .footer_title {
-  font-size: 2rem;
-}
-
-.footer__social {
-  margin-bottom: var(--mb-4);
-}
-
-.footer__icon {
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 0 var(--mb-2)
+  font-size: 1.8rem;
 }
 .footer_sections{
   display: grid;
@@ -639,11 +629,11 @@ transition: 0s ease-in;
 .footer_section h3{
   position: relative;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
 }
 .sco{
-  margin-top: 20px;
+  margin-top: 8px;
   display: grid ;
   grid-template-columns: repeat(4,50px);
   grid-gap: 10px;
@@ -652,8 +642,8 @@ transition: 0s ease-in;
 
 .sco li i{
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background: #337296;
   display: grid;
   align-content: center;
@@ -666,7 +656,7 @@ transition: 0s ease-in;
 }
 .sco li .bx{
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
 }
 footer .links{
   position: relative;
