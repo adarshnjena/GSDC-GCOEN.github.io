@@ -424,9 +424,6 @@ img {
   margin-right :20px;
   margin-left: 20px;
 }
-
-.home__btn {
-  margin-top: 30px;
 }
 
 .home__social-icon {
@@ -442,19 +439,71 @@ img {
 
 }
 
-/*BUTTONS*/
-.button {
-  display: inline-block;
-  background-color: var(--first-color);
-  color: #fff;
-  padding: .75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: .5rem;
-  position: relative;
+/*BUTTONS*/ Ankita
+.container
+{
+    position: left;
+    display:flex;
+    flex-direction: column;
+    align-items: left;
 }
-
-.button:hover {
-  box-shadow: 0 10px 36px rgba(0, 0, 0, .35);
+.container a
+{
+    position: relative;
+    width: 150px;
+    height:55px;
+    text-align:center;
+    line-height: 55px;
+    margin:10px;
+    text-transform: uppercase;
+    background: #2299ff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration:none ;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+.container a span
+{
+position: left;
+display : block;
+width:100%;
+height:100%;
+z-index:100000;
+transition: 0s ease-in;
+}
+.container a:hover span
+{
+    transition: 0.4s ease-in;
+    transform: translateY(-100%);
+}
+.container a:before
+{
+    content:'';
+    position: absolute;
+    bottom:-250px;
+    left: 50%;
+    transform:translateX(-50%);
+    width:250px;
+    height:250px;
+    background:#F4B400;
+    border-radius:50%;
+    transition:0.4s ease-in;
+}
+.container a:hover:before
+{
+    bottom :-150px;
+}
+.container a:nth-child(2):before
+{
+    bottom:60px;
+    
+}
+.container a:nth-child(2):hover:before
+{
+    bottom:-40px;
+    
 }
 
 /* table */
