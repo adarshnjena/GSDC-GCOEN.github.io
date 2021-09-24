@@ -367,7 +367,6 @@ img {
   width: 100vw;
   margin: auto;
   overflow-x: hidden;
-  height: 100vh;
 }
 
 /*circle*/
@@ -453,7 +452,7 @@ img {
     height:55px;
     text-align:center;
     line-height: 55px;
-    margin-top:10px;
+    margin-top:40px;
     text-transform: uppercase;
     background: var(--first-color);
     color: #fff;
@@ -710,7 +709,6 @@ footer .links li a:hover{
 
   @media screen and (min-width: 500px) {
 
-    
   .circle {
     width: 500px;
     height: 500px;
