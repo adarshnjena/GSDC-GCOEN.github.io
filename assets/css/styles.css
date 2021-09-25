@@ -278,7 +278,7 @@ img {
   color:var(--first-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 910px) {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -759,7 +759,7 @@ footer .links li a:hover{
   }
   }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 910px) {
   body {
     margin: 0;
     overflow-x: hidden;
