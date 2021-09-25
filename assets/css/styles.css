@@ -579,6 +579,47 @@ transition: 0s ease-in;
   height: 25rem;
   max-width: 100vw;
 }
+
+/*=======FAQ by vaibhav=========*/
+.heading h3{
+  text-align: center;
+  }
+  
+  .faq-container{
+      color  : var(--second-color);
+      font-size: 1.15rem;
+  }
+  
+  .bar{
+      border-radius: 12px;
+      background:var(--first-color);
+      padding:10px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      text-align: center;
+  }
+
+.bar h4{
+  padding: 10px;
+  margin: 0;
+}
+  .answer{
+      color: #0E2431;
+      display: none;
+      padding: 20px;
+      border-radius: 12px;
+      background: white;
+  }
+  @media (max-width : 768px){
+      .body{
+          margin: 0px !important;
+          align-items: center;
+  
+      }
+      .faq-container .bar {
+          border-radius: 10px;
+      }  
+  }
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
