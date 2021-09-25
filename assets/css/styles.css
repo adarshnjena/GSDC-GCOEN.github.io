@@ -685,14 +685,14 @@ transition: 0s ease-in;
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: #337296;
+  background: #4285F4;
   display: grid;
   align-content: center;
   justify-content: center;
   border-radius: 5px;
 }
 .sco li i:hover{
-  background: #92cff3;
+  background: #0c63f0;
   cursor: pointer;
 }
 .sco li .bx{
