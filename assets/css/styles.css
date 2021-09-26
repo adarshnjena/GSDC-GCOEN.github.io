@@ -554,6 +554,23 @@ transition: 0s ease-in;
 }
 
 /* == Rewards == */
+.img1 {
+  padding: 10px;
+  margin: 10px;
+  width:220px;
+  display: inline;
+  float: left;
+  justify-content: space-evenly;
+
+}
+
+.containers  bd-grid {
+list-style: none;
+justify-content: space-evenly;
+padding-top: 30px;
+margin:0px ;
+}
+
 .container-title{
   color: var(--first-color);
   font-weight:bold;
