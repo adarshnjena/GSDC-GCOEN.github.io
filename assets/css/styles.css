@@ -517,6 +517,10 @@ transition: 0s ease-in;
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.box ul li:hover a{
+  color : white;
+}
 .box{
   font-weight: normal;
   background-color: var(--circle2);
